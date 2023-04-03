@@ -31,7 +31,7 @@ public class Lession_4 {
             x1 = -c / b;
             System.out.println("Phương trình có 1 nghiệm x =" + x1);
         } else if (b == 0) {
-            x1 = Math.sqrt(- c / a);
+            x1 = Math.sqrt(Math.abs(- c / a));
             System.out.println("Phương trình có 1 nghiệm x =" + x1);
         }  else {
             System.out.println("Phương trình vô nghiệm.");
