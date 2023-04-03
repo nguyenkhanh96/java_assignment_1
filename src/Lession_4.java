@@ -16,7 +16,7 @@ public class Lession_4 {
         double delta = b * b - 4 * a * c;
         double x1;
         double x2;
-        
+
         if (delta > 0 && a != 0) {
             x1 = (-b + Math.sqrt(delta)) / (2 * a);
             x2 = (-b - Math.sqrt(delta)) / (2 * a);
@@ -27,7 +27,13 @@ public class Lession_4 {
             x1 = -b / (2 * a);
             System.out.println("Phương trình có một nghiệm kép:");
             System.out.println("x1 = x2 = " + x1);
-        } else {
+        } else if (a == 0) {
+            x1 = -c / b;
+            System.out.println("Phương trình có 1 nghiệm x =" + x1);
+        } else if (b == 0) {
+            x1 = Math.sqrt(- c / a);
+            System.out.println("Phương trình có 1 nghiệm x =" + x1);
+        }  else {
             System.out.println("Phương trình vô nghiệm.");
         }
     }

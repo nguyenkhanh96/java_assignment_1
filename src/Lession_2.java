@@ -21,7 +21,7 @@ public class Lession_2 {
             System.out.println("Rank B");
         } else if (mediumScore >= 5 && mediumScore < 6.5) {
             System.out.println("Rank C");
-        }  else if (mediumScore < 5) {
+        }  else {
             System.out.println("Rank D");
         }
     }
